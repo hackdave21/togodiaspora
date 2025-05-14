@@ -46,115 +46,161 @@
 	</nav>
  <!-- END nav -->
  
- <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_1.jpg');">
+ <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/inde.jpg');">
   <div class="overlay"></div>
   <div class="container">
     <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
       <div class="col-md-9 ftco-animate pb-5 text-center">
-       <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p>
-       <h1 class="mb-0 bread">About Us</h1>
+       <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p> -->
+       <h1 class="mb-0 bread">A propos de nous</h1>
      </div>
    </div>
  </div>
 </section>
 
 <section class="ftco-section services-section">
-  <div class="container">
-    <div class="row d-flex">
-      <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
-       <div class="w-100">
-        <span class="subheading">Welcome to Pacific</span>
-        <h2 class="mb-4">It's time to start your adventure</h2>
-        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-        A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-        <p><a href="#" class="btn btn-primary py-3 px-4">Search Destination</a></p>
-      </div>
+    <div class="container">
+        <style>
+            .services {
+                padding: 2rem;
+                transition: all 0.3s ease;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+            .services:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            }
+            .services .icon {
+                width: 70px;
+                height: 70px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 50%;
+                margin-bottom: 1.5rem;
+                backdrop-filter: blur(5px);
+            }
+            .services .icon span {
+                color: #fff;
+                font-size: 1.8rem;
+            }
+            .dark-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.3);
+                z-index: 0;
+            }
+            .services .icon, .services .media-body {
+                position: relative;
+                z-index: 1;
+            }
+            .media-body p {
+                color: rgba(255, 255, 255, 0.9);
+            }
+        </style>
+        <div class="row d-flex">
+            <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
+                <div class="w-100">
+                    <span class="subheading">Bienvenue au Togo</span>
+                    <h2 class="mb-4">Il est temps de redécouvrir vos racines</h2>
+                    <p>Le Togo, cette perle d'Afrique de l'Ouest, vous attend avec sa riche culture, ses paysages contrastés et son peuple chaleureux. Des plages de sable fin de Lomé aux montagnes verdoyantes de Kpalimé, le pays offre une diversité exceptionnelle.</p>
+                    <p>Que vous soyez un Togolais de la diaspora souhaitant renouer avec vos origines ou un ami du Togo désireux de découvrir ses merveilles, notre plateforme est conçue pour vous. Plus de 2 millions de Togolais vivent aujourd'hui à l'étranger, formant une communauté dynamique qui maintient des liens forts avec le pays natal.</p>
+                    <p>La diaspora togolaise contribue activement au développement économique et culturel du pays, avec des transferts de fonds représentant près de 8% du PIB national et de nombreuses initiatives entrepreneuriales.</p>
+                    <p><a href="#" class="btn btn-primary py-3 px-4">Explorez le Togo</a></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                        <div class="services services-1 d-block text-white" style="background: linear-gradient(135deg, rgba(0,128,0,0.85) 0%, rgba(255,215,0,0.85) 100%), rgba(0,0,0,0.5); border-radius: 8px; position: relative; overflow: hidden;">
+                            <div class="dark-overlay"></div>
+                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-paragliding"></span></div>
+                            <div class="media-body">
+                                <h3 class="heading mb-3 text-white">Événements culturels</h3>
+                                <p>Participez aux célébrations traditionnelles et modernes qui font vibrer le Togo et sa diaspora à travers le monde.</p>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                        <div class="services services-1 d-block text-white" style="background: linear-gradient(135deg, rgba(0,100,0,0.9) 0%, rgba(218,165,32,0.8) 100%), rgba(0,0,0,0.6); border-radius: 8px; position: relative; overflow: hidden;">
+                            <div class="dark-overlay"></div>
+                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+                            <div class="media-body">
+                                <h3 class="heading mb-3 text-white">Voyages organisés</h3>
+                                <p>Découvrez nos circuits sur mesure pour la diaspora souhaitant redécouvrir le Togo authentique et ses trésors cachés.</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                        <div class="services services-1 d-block text-white" style="background: linear-gradient(135deg, rgba(34,139,34,0.85) 0%, rgba(255,223,0,0.85) 100%), rgba(0,0,0,0.5); border-radius: 8px; position: relative; overflow: hidden;">
+                            <div class="dark-overlay"></div>
+                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tour-guide"></span></div>
+                            <div class="media-body">
+                                <h3 class="heading mb-3 text-white">Opportunités d'investissement</h3>
+                                <p>Explorez les possibilités d'investissement au Togo pour contribuer au développement de votre pays d'origine.</p>
+                            </div>
+                        </div>      
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                        <div class="services services-1 d-block text-white" style="background: linear-gradient(135deg, rgba(50,150,50,0.9) 0%, rgba(240,230,50,0.8) 100%), rgba(0,0,0,0.6); border-radius: 8px; position: relative; overflow: hidden;">
+                            <div class="dark-overlay"></div>
+                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-map"></span></div>
+                            <div class="media-body">
+                                <h3 class="heading mb-3 text-white">Réseau diaspora</h3>
+                                <p>Connectez-vous avec d'autres Togolais à travers le monde et développez votre réseau personnel et professionnel.</p>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-6">
-     <div class="row">
-      <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-        <div class="services services-1 color-1 d-block img" style="background-image: url(images/services-1.jpg);">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-paragliding"></span></div>
-          <div class="media-body">
-            <h3 class="heading mb-3">Activities</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-          </div>
-        </div>      
-      </div>
-      <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-        <div class="services services-1 color-2 d-block img" style="background-image: url(images/services-2.jpg);">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
-          <div class="media-body">
-            <h3 class="heading mb-3">Travel Arrangements</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-          </div>
-        </div>    
-      </div>
-      <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-        <div class="services services-1 color-3 d-block img" style="background-image: url(images/services-3.jpg);">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tour-guide"></span></div>
-          <div class="media-body">
-            <h3 class="heading mb-3">Private Guide</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-          </div>
-        </div>      
-      </div>
-      <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
-        <div class="services services-1 color-4 d-block img" style="background-image: url(images/services-4.jpg);">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-map"></span></div>
-          <div class="media-body">
-            <h3 class="heading mb-3">Location Manager</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-          </div>
-        </div>      
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 </section>
 
-
-<section class="ftco-section ftco-about img"style="background-image: url(images/bg_4.jpg);">
- <div class="overlay"></div>
- <div class="container py-md-5">
-  <div class="row py-md-5">
-   <div class="col-md d-flex align-items-center justify-content-center">
-    <a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
-     <span class="fa fa-play"></span>
-   </a>
- </div>
-</div>
-</div>
-</section>
+<section class="ftco-section ftco-about img" style="background-image: url(images/colombe.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+			<div class="overlay"></div>
+			<div class="container py-md-5">
+				<div class="row py-md-5">
+					<div class="col-md d-flex align-items-center justify-content-center">
+						<a href="images/Lomev.mp4" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-4">
+							<span class="fa fa-play"></span>
+						</a>
+						<p class="text-white text-center">Lomé <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></p>
+					</div>
+				</div>
+			</div>
+		</section>
 
 <section class="ftco-section ftco-about ftco-no-pt img">
- <div class="container">
-  <div class="row d-flex">
-   <div class="col-md-12 about-intro">
-    <div class="row">
-     <div class="col-md-6 d-flex align-items-stretch">
-      <div class="img d-flex w-100 align-items-center justify-content-center" style="background-image:url(images/about-1.jpg);">
-      </div>
-    </div>
-    <div class="col-md-6 pl-md-5 py-5">
-      <div class="row justify-content-start pb-3">
-        <div class="col-md-12 heading-section ftco-animate">
-         <span class="subheading">About Us</span>
-         <h2 class="mb-4">Make Your Tour Memorable and Safe With Us</h2>
-         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-         <p><a href="#" class="btn btn-primary">Book Your Destination</a></p>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</div>
-</div>
-</section>
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-md-12 about-intro">
+						<div class="row">
+							<div class="col-md-6 d-flex align-items-stretch">
+								<div class="img d-flex w-100 align-items-center justify-content-center" style="background-image:url(images/2f.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
+								</div>
+							</div>
+							<div class="col-md-6 pl-md-5 py-5">
+								<div class="row justify-content-start pb-3">
+									<div class="col-md-12 heading-section ftco-animate">
+										<span class="subheading">Notre capitale</span>
+										<h2 class="mb-4">Lomé, la belle</h2>
+										<p>Lomé, perle de l'Afrique de l'Ouest, est bien plus qu'une simple capitale. Située au bord du golfe de Guinée, elle offre un paysage unique où l'océan Atlantique caresse les plages dorées qui bordent la ville. Son atmosphère chaleureuse, empreinte de douceur de vivre, séduit aussi bien les visiteurs que les habitants. Ville cosmopolite, Lomé allie modernité et traditions avec élégance : ses marchés animés comme celui d'Assigamé côtoient des édifices coloniaux chargés d'histoire, tandis que les avenues bordées de palmiers témoignent de son ouverture sur le monde.
+										Capitale politique, économique et culturelle du Togo, Lomé est aussi un centre dynamique où se rencontrent entrepreneurs, artistes et rêveurs. On y découvre une gastronomie riche, une scène artistique florissante et une population accueillante, fière de ses racines et tournée vers l'avenir. Lomé n'est pas seulement une ville : c'est une expérience, un symbole d'élégance africaine et un joyau à découvrir.
+										</p>
 
-<section class="ftco-section testimony-section bg-bottom" style="background-image: url(images/bg_1.jpg);">
+										<p><a href="#" class="btn btn-primary">Découvrir</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!-- <section class="ftco-section testimony-section bg-bottom" style="background-image: url(images/bg_1.jpg);">
  <div class="overlay"></div>
  <div class="container">
   <div class="row justify-content-center pb-4">
@@ -275,7 +321,7 @@
 </div>
 </div>
 </div>
-</section>
+</section> -->
 
 	<section class="ftco-intro ftco-section ftco-no-pt">
     <div class="container">
