@@ -47,26 +47,43 @@
 	</nav>
 	<!-- END nav -->
 	
-	<div class="hero-wrap js-fullheight" style="background-image: url('images/back.png'); background-size: cover; background-repeat: no-repeat; background-position: top center;">
+<div class="hero-wrap js-fullheight" style="background-image: url('images/logo.jpg'); background-size: cover; background-repeat: no-repeat; background-position: top center;">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-            <div class="col-md-7 ftco-animate"><br><br><br><br><br><br>
-                <span class="subheading">Bienvenue sur Diaspora Togo</span>
-                <h1 class="mb-4">La voix des Togolais du monde entier</h1>
-                <p class="caps">Découvrez les talents et l'actualité de notre communauté mondiale, des plages dorées aux montagnes luxuriantes du Togo, où nos talents font rayonner l'âme togolaise dans les arts, le sport, l'entrepreneuriat et bien d'autres encore.</p>
+            <!-- Texte à gauche -->
+            <div class="col-md-7 ftco-animate">
+                <br><br><br><br><br><br>
+             <span style="color: white; font-family: 'Montserrat', sans-serif; font-size: 2.5rem; font-weight: 300; letter-spacing: 2px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
+                    <span style="border-bottom: 2px solid #f8b400; padding-bottom: 5px;">Bienvenue sur Diaspora Togo</span>
+                </span>
+
+                <h1 class="mb-4">La vrai face du TOGO</h1>
+                <p class="text-white text-center">
+                        <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;">
+                    </p>
+                <p class="caps">
+                    Découvrez les talents et l'actualité de notre communauté mondiale, des plages dorées aux montagnes luxuriantes du Togo, où nos talents font rayonner l'âme togolaise dans les arts, le sport, l'entrepreneuriat et bien d'autres encore.
+                </p>
                 <br><br><br><br>
             </div>
-            <div class="d-flex flex-column align-items-center">
-                <a href="images/togov.mp4" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-2">
-                    <span class="fa fa-play"></span>
-                </a>
-                <p class="text-white text-center">Jouez la vidéo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></p>
+
+            <!-- Vidéo et drapeau à droite -->
+            <div class="col-md-5 d-flex justify-content-end align-items-start">
+                <div class="d-flex flex-column align-items-center mt-5">
+                    <a href="images/monpays.mp4" class="icon-video popup-vimeo d-flex align-items-center justify-content-center mb-2" style="width: 60px; height: 60px; background-color: rgba(255, 255, 255, 0.2); border-radius: 50%;">
+                        <span class="fa fa-play" style="color: white;"></span>
+                    </a>
+                    <!-- <p class="text-white text-center">
+                        <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;">
+                    </p> -->
+                </div>
             </div>
         </div>
     </div>
     <div style="height: 80px;"></div>
 </div>
+
 <!-- 
 	<section class="ftco-section ftco-no-pb ftco-no-pt">
 		<div class="container">
@@ -327,97 +344,119 @@
     </div>
 </section>
 
-	<section class="ftco-section img ftco-select-destination" style="background-image: url(images/bg_3.jpg);">
-			<div class="container">
-				<div class="row justify-content-center pb-4">
-					<div class="col-md-12 heading-section text-center ftco-animate">
-						<span class="subheading">Quelques publications</span>
-						<h2 class="mb-4">Photos</h2>
-					</div>
-				</div>
-			</div>
-			<div class="container container-2">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="carousel-destination owl-carousel ftco-animate">
-							<div class="item">
-								<div class="project-destination">
-    <a href="details-photo.html" class="img" style="background-image: url(images/cascade.webp); position: relative;">
-        <!-- Titre superposé sur l'image -->
-        <div style="position: absolute; top: 150px; left: 0; right: 0; text-align: center; background-color: rgba(0,0,0,0.5); padding: 5px; color: white; font-weight: bold;">
-            Cascade de Kpalimé
+<section class="ftco-section img ftco-select-destination" style="background-image: url(images/bg_3.jpg);">
+    <div class="container">
+        <div class="row justify-content-center pb-4">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <span class="subheading">Découvrez</span>
+                <h2 class="mb-4">Nos Catégories</h2>
+            </div>
         </div>
-        <div class="text">
-            <h3>Togo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></h3>
-            <span>Togo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></span>
+    </div>
+    <div class="container container-2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel-destination owl-carousel ftco-animate" id="categories-carousel">
+                    <!-- Catégorie Tradition -->
+                    <div class="item" style="background-color: #036A51;">
+                        <div class="project-destination">
+                            <a href="tradition.html" class="img" style="background-image: url(images/tradition.jpg);">
+                                <div style="position: absolute; top: 50%; left: 0; right: 0; text-align: center; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); padding: 15px; color: white; font-weight: bold;">
+                                    <i class="fa fa-landmark" style="font-size: 2rem; display: block; margin-bottom: 10px;"></i>
+                                    Tradition
+                                </div>
+                                <div class="text">
+                                    <h3>Tradition</h3>
+                                    <span>Découvrez le patrimoine culturel</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Catégorie Cuisine -->
+                    <div class="item" style="background-color: #036A51;">
+                        <div class="project-destination">
+                            <a href="cuisine.html" class="img" style="background-image: url(images/cuisine.jpg);">
+                                <div style="position: absolute; top: 50%; left: 0; right: 0; text-align: center; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); padding: 15px; color: white; font-weight: bold;">
+                                    <i class="fa fa-utensils" style="font-size: 2rem; display: block; margin-bottom: 10px;"></i>
+                                    Cuisine
+                                </div>
+                                <div class="text">
+                                    <h3>Cuisine</h3>
+                                    <span>Saveurs et gastronomie locale</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Catégorie Art -->
+                    <div class="item" style="background-color: #036A51;">
+                        <div class="project-destination">
+                            <a href="art.html" class="img" style="background-image: url(images/art.jpg);">
+                                <div style="position: absolute; top: 50%; left: 0; right: 0; text-align: center; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); padding: 15px; color: white; font-weight: bold;">
+                                    <i class="fa fa-palette" style="font-size: 2rem; display: block; margin-bottom: 10px;"></i>
+                                    Art
+                                </div>
+                                <div class="text">
+                                    <h3>Art</h3>
+                                    <span>Expression artistique</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Catégorie Sport -->
+                    <div class="item" style="background-color: #036A51;">
+                        <div class="project-destination">
+                            <a href="sport.html" class="img" style="background-image: url(images/sport.jpg);">
+                                <div style="position: absolute; top: 50%; left: 0; right: 0; text-align: center; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); padding: 15px; color: white; font-weight: bold;">
+                                    <i class="fa fa-futbol" style="font-size: 2rem; display: block; margin-bottom: 10px;"></i>
+                                    Sport
+                                </div>
+                                <div class="text">
+                                    <h3>Sport</h3>
+                                    <span>Activités sportives et loisirs</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Catégorie Nature -->
+                    <div class="item" style="background-color: #036A51;">
+                        <div class="project-destination">
+                            <a href="nature.html" class="img" >
+                                <div style="position: absolute; top: 50%; left: 0; right: 0; text-align: center; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); padding: 15px; color: white; font-weight: bold;">
+                                    <i class="fa fa-tree" style="font-size: 2rem; display: block; margin-bottom: 10px;"></i>
+                                    Nature
+                                </div>
+                                <div class="text">
+                                    <h3>Nature</h3>
+                                    <span>Parcs et réserves naturelles</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Catégorie Festivals -->
+                    <div class="item" style="background-color: #036A51;">
+                        <div class="project-destination">
+                            <a href="categories/festivals.html" class="img">
+                                <div style="position: absolute; top: 50%; left: 0; right: 0; text-align: center; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); padding: 15px; color: white; font-weight: bold;">
+                                    <i class="fa fa-music" style="font-size: 2rem; display: block; margin-bottom: 10px;"></i>
+                                    Musique
+                                </div>
+                                <div class="text">
+                                    <h3> Musique</h3>
+                                    <span>La musique togolaise</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </a>
-</div>
-							</div>
-
-								<div class="item">
-								<div class="project-destination">
-    <a href="#" class="img" style="background-image: url(images/kou.jpg); position: relative;">
-        <!-- Titre superposé sur l'image -->
-        <div style="position: absolute; top: 150px; left: 0; right: 0; text-align: center; background-color: rgba(0,0,0,0.5); padding: 5px; color: white; font-weight: bold;">
-            Koutamakou
-        </div>
-        <div class="text">
-            <h3>Togo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></h3>
-            <span>Togo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></span>
-        </div>
-    </a>
-</div>
-							</div>
-	
-
-							<div class="item">
-								<div class="project-destination">
-    <a href="#" class="img" style="background-image: url(images/kou.jpg); position: relative;">
-        <!-- Titre superposé sur l'image -->
-        <div style="position: absolute; top: 150px; left: 0; right: 0; text-align: center; background-color: rgba(0,0,0,0.5); padding: 5px; color: white; font-weight: bold;">
-            Koutamakou
-        </div>
-        <div class="text">
-            <h3>Togo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></h3>
-            <span>Togo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></span>
-        </div>
-    </a>
-</div>
-							</div>
-							<div class="item">
-								<div class="project-destination">
-    <a href="#" class="img" style="background-image: url(images/kou.jpg); position: relative;">
-        <!-- Titre superposé sur l'image -->
-        <div style="position: absolute; top: 150px; left: 0; right: 0; text-align: center; background-color: rgba(0,0,0,0.5); padding: 5px; color: white; font-weight: bold;">
-           Koutamakou
-        </div>
-        <div class="text">
-            <h3>Togo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></h3>
-            <span>Togo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></span>
-        </div>
-    </a>
-</div>
-							</div>
-							<div class="item">
-								<div class="project-destination">
-    <a href="#" class="img" style="background-image: url(images/kou.jpg); position: relative;">
-        <!-- Titre superposé sur l'image -->
-        <div style="position: absolute; top: 150px; left: 0; right: 0; text-align: center; background-color: rgba(0,0,0,0.5); padding: 5px; color: white; font-weight: bold;">
-          Koutamakou
-        </div>
-        <div class="text">
-            <h3>Togo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></h3>
-            <span>Togo <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/tg.svg" alt="Drapeau du Togo" style="height: 20px; margin-left: 8px; vertical-align: middle;"></span>
-        </div>
-    </a>
-</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    </div>
+</section>
 
 		<section class="ftco-section">
   <div class="container">
