@@ -49,16 +49,70 @@
 	</nav>
  <!-- END nav -->
  
- <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/inde.jpg');">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
-      <div class="col-md-9 ftco-animate pb-5 text-center">
-       <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p> -->
-       <h1 class="mb-0 bread">A propos de nous</h1>
-     </div>
-   </div>
- </div>
+<style>
+.hero-wrap-2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%; /* 5 images × 100% */
+    height: 100%;
+    animation: slideshow 15s infinite; /* 3 secondes par image × 5 images */
+}
+
+.carousel-slide {
+    float: left;
+    width: 20%; /* 100% / 5 images */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Vos images - remplacez par vos vraies images */
+.slide-1 { background-image: url('images/site indep.jpg'); }
+.slide-2 { background-image: url('images/site chateau viale.jpg'); }
+.slide-3 { background-image: url('images/site cathe.jpg'); }
+.slide-4 { background-image: url('images/site palais.jpg'); }
+.slide-5 { background-image: url('images/site koutamakou.jpg'); }
+
+@keyframes slideshow {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-20%); }
+    45% { transform: translateX(-20%); }
+    50% { transform: translateX(-40%); }
+    70% { transform: translateX(-40%); }
+    75% { transform: translateX(-60%); }
+    95% { transform: translateX(-60%); }
+    100% { transform: translateX(-80%); }
+}
+</style>
+
+<!-- Votre section hero modifiée -->
+<section class="hero-wrap hero-wrap-2 js-fullheight">
+    <!-- Carrousel d'images (remplace le background-image fixe) -->
+    <div class="carousel-container">
+        <div class="carousel-slide slide-1"></div>
+        <div class="carousel-slide slide-2"></div>
+        <div class="carousel-slide slide-3"></div>
+        <div class="carousel-slide slide-4"></div>
+        <div class="carousel-slide slide-5"></div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate pb-5 text-center">
+                <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p> -->
+                <h1 class="mb-0 bread">A propos de nous</h1>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="ftco-section services-section">
