@@ -98,8 +98,19 @@ const translations = {
 		disc:"Découvrir le Togo",
 
 		//page about
-		
+		aboutus: "A propos de nous",
+		pub: "Toutes nos publications ici",
 
+	address_title: "Adresse", 
+	shop_title: "Boutique",
+	diaspora_message: "Chers compatriotes togolais et amis du Togo, où que vous soyez dans le monde, votre lien avec le pays reste précieux. En nous laissant votre email, vous restez connectés aux racines qui nous unissent.",
+	exclusive_news_title: "Actualités exclusives",
+	exclusive_news_desc: "Recevez en primeur les dernières nouvelles du Togo et de sa diaspora",
+	professional_opportunities_title: "Opportunités professionnelles",
+	professional_opportunities_desc: "Découvrez des partenariats d'affaires entre le Togo et l'international",
+	cultural_events_title: "Événements culturels",
+	cultural_events_desc: "Ne manquez aucune célébration togolaise, où que vous soyez",
+	unity_quote: "Que vous soyez à l'intérieur ou à l'extérieur du pays, ensemble nous construisons l'avenir du Togo. Votre voix compte, votre expérience enrichit notre communauté."
 
 	},
 	en: {
@@ -197,6 +208,19 @@ const translations = {
 		termesconditions: "Terms and conditions",
 		info: "Informations",
 		disc:"Discover Togo",
+		aboutus: "About us",
+		pub: "All our publications here",
+
+	address_title: "Address",
+	shop_title: "Shop",
+	diaspora_message: "Dear Togolese compatriots and friends of Togo, wherever you are in the world, your connection to the country remains precious. By leaving us your email, you stay connected to the roots that unite us.",
+	exclusive_news_title: "Exclusive news",
+	exclusive_news_desc: "Be the first to receive the latest news from Togo and its diaspora",
+	professional_opportunities_title: "Professional opportunities",
+	professional_opportunities_desc: "Discover business partnerships between Togo and the international community",
+	cultural_events_title: "Cultural events",
+	cultural_events_desc: "Don't miss any Togolese celebration, wherever you are",
+	unity_quote: "Whether you are inside or outside the country, together we are building Togo's future. Your voice matters, your experience enriches our community."
 
 
     },
@@ -295,8 +319,19 @@ const translations = {
 		termesconditions: "Allgemeine Geschäftsbedingungen",
 		info: "Informationen",
 		disc:"Togo entdecken",
+		aboutus: "Über uns",
+		pub: "Alle unsere Veröffentlichungen hier",
 
-
+	address_title: "Adresse",
+	shop_title: "Shop",
+	diaspora_message: "Liebe togolesische Landsleute und Freunde Togos, wo immer ihr auf der Welt seid, eure Verbindung zum Land bleibt kostbar. Indem ihr uns eure E-Mail hinterlasst, bleibt ihr mit den Wurzeln verbunden, die uns vereinen.",
+	exclusive_news_title: "Exklusive Nachrichten",
+	exclusive_news_desc: "Erhaltet als Erste die neuesten Nachrichten aus Togo und seiner Diaspora",
+	professional_opportunities_title: "Berufliche Möglichkeiten",
+	professional_opportunities_desc: "Entdeckt Geschäftspartnerschaften zwischen Togo und der internationalen Gemeinschaft",
+	cultural_events_title: "Kulturelle Veranstaltungen",
+	cultural_events_desc: "Verpasst keine togolesische Feier, wo immer ihr seid",
+	unity_quote: "Ob ihr im Land oder außerhalb seid, gemeinsam bauen wir Togos Zukunft auf. Eure Stimme zählt, eure Erfahrung bereichert unsere Gemeinschaft."
 
 
 
