@@ -97,7 +97,8 @@ const translations = {
 		info: "Informations",
 		disc:"Découvrir le Togo",
 
-
+		//page about
+		
 
 
 	},

@@ -26,6 +26,84 @@
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@300;400&family=Lora:ital@0;1&family=Quicksand:wght@400;500&family=Cormorant+Garamond:wght@300;400&display=swap');
 </style>
+ <style>
+		/* Styles uniquement pour le sélecteur de langues */
+		.language-selector {
+			position: relative;
+			display: inline-block;
+			margin-left: 20px;
+		}
+
+		.language-toggle {
+			background: none;
+			border: 2px solid #007bff;
+			border-radius: 25px;
+			padding: 8px 15px;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			color: white;
+			font-weight: 500;
+			transition: all 0.3s ease;
+		}
+
+		.language-toggle:hover {
+			background-color: #007bff;
+		}
+
+		.flag-icon {
+			width: 24px;
+			height: 16px;
+			border-radius: 2px;
+			object-fit: cover;
+		}
+
+		.language-dropdown {
+			position: absolute;
+			top: 100%;
+			right: 0;
+			background: white;
+			border-radius: 8px;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+			padding: 8px 0;
+			min-width: 160px;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(-10px);
+			transition: all 0.3s ease;
+			z-index: 1000;
+		}
+
+		.language-dropdown.show {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+
+		.language-option {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			padding: 10px 15px;
+			cursor: pointer;
+			color: #333;
+			transition: background-color 0.2s ease;
+			border: none;
+			background: none;
+			width: 100%;
+			text-align: left;
+		}
+
+		.language-option:hover {
+			background-color: #f8f9fa;
+		}
+
+		.language-option.active {
+			background-color: #007bff;
+			color: white;
+		}
+	</style>
 </head>
 <body>
  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -37,13 +115,34 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item "><a href="index.html" class="nav-link">Accueil</a></li>
-					<li class="nav-item active"><a href="about.html" class="nav-link">A Propos</a></li>
-					<li class="nav-item"><a href="publication.html" class="nav-link">Publications</a></li>
-					<!-- <li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+					<li class="nav-item"><a href="index.html" class="nav-link" data-translate="nav_home">Accueil</a></li>
+				<li class="nav-item active"><a href="about.html" class="nav-link" data-translate="nav_about">A Propos</a></li>
+				<li class="nav-item"><a href="publication.html" class="nav-link" data-translate="nav_publications">Publications</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a></li>
 				</ul>
+
+        <!-- Sélecteur de langues -->
+			<div class="language-selector">
+				<button class="language-toggle" id="languageToggle">
+					<img src="https://flagcdn.com/w40/fr.png" alt="Français" class="flag-icon" id="currentFlag">
+					<span data-translate="current_language">Français</span>
+					<i class="fa fa-chevron-down"></i>
+				</button>
+				<div class="language-dropdown" id="languageDropdown">
+					<button class="language-option active" data-lang="fr">
+						<img src="https://flagcdn.com/w40/fr.png" alt="Français" class="flag-icon">
+						<span>Français</span>
+					</button>
+					<button class="language-option" data-lang="en">
+						<img src="https://flagcdn.com/w40/gb.png" alt="English" class="flag-icon">
+						<span>English</span>
+					</button>
+					<button class="language-option" data-lang="de">
+						<img src="https://flagcdn.com/w40/de.png" alt="Deutsch" class="flag-icon">
+						<span>Deutsch</span>
+					</button>
+				</div>
+			</div>
 			</div>
 		</div>
 	</nav>
@@ -160,14 +259,14 @@
             <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
                 <div class="w-100">
             <span style="color: black; font-family: 'Quicksand', sans-serif; font-size: 2.5rem; font-weight: 500; letter-spacing: 2px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
-    <span style="background: linear-gradient(to right, transparent, rgba(255, 255, 15, 0.2), transparent); padding: 0 15px 5px 15px; border-bottom: 2px solid yellow;">Qui sommes-nous ?</span>
+    <span style="background: linear-gradient(to right, transparent, rgba(255, 255, 15, 0.2), transparent); padding: 0 15px 5px 15px; border-bottom: 2px solid yellow;" data-translate="dimoi">Que faut-il savoir sur TOGO DIASPORA ?</span>
 </span><br><br>
                     <!-- <h2 class="mb-4">Il est temps de redécouvrir vos racines</h2> -->
-                    <p>L'objectif est de créer une plateforme d’échanges économiques, d’investissements, et de partenariats entre les entreprises et entrepreneurs togolais à l'étranger et ceux basés au Togo. </p>
-                    <p>Ce projet vise à promouvoir les produits et services des entreprises de la diaspora, à renforcer les réseaux d'affaires et à stimuler la création d’opportunités économiques pour le pays.
+                    <p data-translate="p1">L'objectif est de créer une plateforme d’échanges économiques, d’investissements, et de partenariats entre les entreprises et entrepreneurs togolais à l'étranger et ceux basés au Togo. </p>
+                    <p data-translate="p2">Ce projet vise à promouvoir les produits et services des entreprises de la diaspora, à renforcer les réseaux d'affaires et à stimuler la création d’opportunités économiques pour le pays.
 On opte pour la promotion de la culture togolaise à travers le monde, en mettant en avant les talents et les initiatives de la diaspora togolaise. </p>
-                    <p>Togodiaspora est une plateforme pour partager des événements, des projets culturels et des actions solidaires liées au Togo et à l’Afrique.</p>
-                    <p><a href="#" class="btn btn-primary py-3 px-4">Explorez le Togo</a></p>
+                    <p data-translate="p3">Togodiaspora est une plateforme pour partager des événements, des projets culturels et des actions solidaires liées au Togo et à l’Afrique.</p>
+                    <p><a href="contact.html" class="btn btn-primary py-3 px-4" data-translate="b1" >Contactez-nous</a></p>
                 </div>
             </div>
             <div class="col-md-6">
@@ -177,8 +276,8 @@ On opte pour la promotion de la culture togolaise à travers le monde, en mettan
                 <div class="dark-overlay"></div>
                 <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-paragliding"></span></div>
                 <div class="media-body">
-                    <h3 class="heading mb-3 text-white">Événements culturels</h3>
-                    <p>Immergez-vous dans la richesse des traditions togolaises à travers nos célébrations authentiques organisées par la diaspora aux quatre coins du monde.</p>
+                    <h3 class="heading mb-3 text-white" data-translate="t2">Événements culturels</h3>
+                    <p data-translate="p4">Immergez-vous dans la richesse des traditions togolaises à travers nos célébrations authentiques organisées par la diaspora aux quatre coins du monde.</p>
                 </div>
             </div>      
         </div>
@@ -187,8 +286,8 @@ On opte pour la promotion de la culture togolaise à travers le monde, en mettan
                 <div class="dark-overlay"></div>
                 <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
                 <div class="media-body">
-                    <h3 class="heading mb-3 text-white">Voyages organisés</h3>
-                    <p>Retrouvez vos racines grâce à nos circuits spécialement conçus pour la diaspora souhaitant explorer les merveilles méconnues du Togo ancestral.</p>
+                    <h3 class="heading mb-3 text-white" data-translate="t3">Voyages organisés</h3>
+                    <p data-translate="p5">Retrouvez vos racines grâce à nos circuits Loméement conçus pour la diaspora souhaitant explorer les merveilles méconnues du Togo ancestral.</p>
                 </div>
             </div>    
         </div>
@@ -197,8 +296,8 @@ On opte pour la promotion de la culture togolaise à travers le monde, en mettan
                 <div class="dark-overlay"></div>
                 <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-tour-guide"></span></div>
                 <div class="media-body">
-                    <h3 class="heading mb-3 text-white">Opportunités d'investissement</h3>
-                    <p>Participez activement au développement économique du Togo en découvrant nos projets d'investissement sélectionnés pour leur impact et leur viabilité.</p>
+                    <h3 class="heading mb-3 text-white" data-translate="t4">Opportunités d'investissement</h3>
+                    <p data-translate="p6">Participez activement au développement économique du Togo en découvrant nos projets d'investissement sélectionnés pour leur impact et leur viabilité.</p>
                 </div>
             </div>      
         </div>
@@ -207,8 +306,8 @@ On opte pour la promotion de la culture togolaise à travers le monde, en mettan
                 <div class="dark-overlay"></div>
                 <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-map"></span></div>
                 <div class="media-body">
-                    <h3 class="heading mb-3 text-white">Réseau diaspora</h3>
-                    <p>Élargissez votre cercle professionnel et personnel en rejoignant notre communauté de Togolais établis à l'international et partageant les mêmes ambitions.</p>
+                    <h3 class="heading mb-3 text-white" data-translate="t5">Réseau diaspora</h3>
+                    <p data-translate="p7">Élargissez votre cercle professionnel et personnel en rejoignant notre communauté de Togolais établis à l'international et partageant les mêmes ambitions.</p>
                 </div>
             </div>      
         </div>
@@ -217,7 +316,6 @@ On opte pour la promotion de la culture togolaise à travers le monde, en mettan
         </div>
     </div>
 </section>
-
 <section class="ftco-section ftco-about img" style="background-image: url(images/colombe.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;">
 			<div class="overlay"></div>
 			<div class="container py-md-5">
@@ -616,6 +714,7 @@ On opte pour la promotion de la culture togolaise à travers le monde, en mettan
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
+	<script src="translate.js"></script>
 
 </body>
 </html>
