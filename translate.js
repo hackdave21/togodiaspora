@@ -110,7 +110,16 @@ const translations = {
 	professional_opportunities_desc: "Découvrez des partenariats d'affaires entre le Togo et l'international",
 	cultural_events_title: "Événements culturels",
 	cultural_events_desc: "Ne manquez aucune célébration togolaise, où que vous soyez",
-	unity_quote: "Que vous soyez à l'intérieur ou à l'extérieur du pays, ensemble nous construisons l'avenir du Togo. Votre voix compte, votre expérience enrichit notre communauté."
+	unity_quote: "Que vous soyez à l'intérieur ou à l'extérieur du pays, ensemble nous construisons l'avenir du Togo. Votre voix compte, votre expérience enrichit notre communauté.",
+
+	//page tradition
+	home_breadcrumb: "Acceuil",
+	tradition_breadcrumb: "Tradition",
+	videos_breadcrumb: "Videos",
+	heritage_title: "Héritage et traditions ancestrales du Togo",
+	cultural_immersion_title: "Immergez-vous dans les richesses culturelles togolaises",
+	see_more_videos_btn: "Voir plus de vidéos"
+
 
 	},
 	en: {
@@ -220,8 +229,14 @@ const translations = {
 	professional_opportunities_desc: "Discover business partnerships between Togo and the international community",
 	cultural_events_title: "Cultural events",
 	cultural_events_desc: "Don't miss any Togolese celebration, wherever you are",
-	unity_quote: "Whether you are inside or outside the country, together we are building Togo's future. Your voice matters, your experience enriches our community."
-
+	unity_quote: "Whether you are inside or outside the country, together we are building Togo's future. Your voice matters, your experience enriches our community.",
+	//page tradition
+	home_breadcrumb: "Home",
+	tradition_breadcrumb: "Tradition",
+	videos_breadcrumb: "Videos",
+	heritage_title: "Heritage and ancestral traditions of Togo",
+	cultural_immersion_title: "Immerse yourself in Togolese cultural riches",
+	see_more_videos_btn: "See more videos"
 
     },
 	de: {
@@ -331,9 +346,15 @@ const translations = {
 	professional_opportunities_desc: "Entdeckt Geschäftspartnerschaften zwischen Togo und der internationalen Gemeinschaft",
 	cultural_events_title: "Kulturelle Veranstaltungen",
 	cultural_events_desc: "Verpasst keine togolesische Feier, wo immer ihr seid",
-	unity_quote: "Ob ihr im Land oder außerhalb seid, gemeinsam bauen wir Togos Zukunft auf. Eure Stimme zählt, eure Erfahrung bereichert unsere Gemeinschaft."
+	unity_quote: "Ob ihr im Land oder außerhalb seid, gemeinsam bauen wir Togos Zukunft auf. Eure Stimme zählt, eure Erfahrung bereichert unsere Gemeinschaft.",
 
-
+	//tardition
+	home_breadcrumb: "Startseite",
+	tradition_breadcrumb: "Tradition",
+	videos_breadcrumb: "Videos",
+	heritage_title: "Erbe und Ahnentraditionen von Togo",
+	cultural_immersion_title: "Taucht ein in die kulturellen Reichtümer Togos",
+	see_more_videos_btn: "Mehr Videos ansehen"
 
 
     }
