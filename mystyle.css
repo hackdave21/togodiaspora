@@ -1,0 +1,298 @@
+/* Styles uniquement pour le sélecteur de langues */
+		.language-selector {
+			position: relative;
+			display: inline-block;
+			margin-left: 20px;
+		}
+
+		.language-toggle {
+			background: none;
+			border: 2px solid #007bff;
+			border-radius: 25px;
+			padding: 8px 15px;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			color: white;
+			font-weight: 500;
+			transition: all 0.3s ease;
+		}
+
+		.language-toggle:hover {
+			background-color: #007bff;
+		}
+
+		.flag-icon {
+			width: 24px;
+			height: 16px;
+			border-radius: 2px;
+			object-fit: cover;
+		}
+
+		.language-dropdown {
+			position: absolute;
+			top: 100%;
+			right: 0;
+			background: white;
+			border-radius: 8px;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+			padding: 8px 0;
+			min-width: 160px;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(-10px);
+			transition: all 0.3s ease;
+			z-index: 1000;
+		}
+
+		.language-dropdown.show {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+
+		.language-option {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			padding: 10px 15px;
+			cursor: pointer;
+			color: #333;
+			transition: background-color 0.2s ease;
+			border: none;
+			background: none;
+			width: 100%;
+			text-align: left;
+		}
+
+		.language-option:hover {
+			background-color: #f8f9fa;
+		}
+
+		.language-option.active {
+			background-color: #007bff;
+			color: white;
+		}
+
+        /* videos publication */
+         .video-container {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+  }
+  
+  .play-button-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .video-container:hover .play-button-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .video-container:hover .fa-play-circle {
+    transform: scale(1.1);
+  }
+  
+  .fa-play-circle {
+    transition: all 0.3s ease;
+  }
+  
+  .price {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #f85959;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  /* services */
+    .services {
+                padding: 2rem;
+                transition: all 0.3s ease;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+            .services:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            }
+            .services .icon {
+                width: 70px;
+                height: 70px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 50%;
+                margin-bottom: 1.5rem;
+                backdrop-filter: blur(5px);
+            }
+            .services .icon span {
+                color: #fff;
+                font-size: 1.8rem;
+            }
+            .dark-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.3);
+                z-index: 0;
+            }
+            .services .icon, .services .media-body {
+                position: relative;
+                z-index: 1;
+            }
+            .media-body p {
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+              /* Styles pour la section vidéo */
+      .title-underline {
+        height: 3px;
+        width: 60px;
+        background: linear-gradient(to right, #00964d, #ffd700);
+        margin: 0 auto 30px;
+      }
+      
+      .video-thumbnail {
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .video-thumbnail:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      }
+      
+      .icon-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        background-color: rgba(0, 150, 77, 0.7);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+      }
+      
+      .icon-video:hover {
+        background-color: rgba(0, 150, 77, 0.9);
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+      
+      .icon-video .fa-play {
+        color: white;
+        font-size: 20px;
+      }
+      
+      .btn-primary {
+        background: linear-gradient(135deg, #00964d, #008000);
+        border: none;
+        box-shadow: 0 4px 10px rgba(0,150,77,0.3);
+        transition: all 0.3s ease;
+      }
+      
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0,150,77,0.4);
+        background: linear-gradient(135deg, #008000, #00964d);
+      }
+            
+
+ /* footer */
+
+ .ftco-footer {
+  padding: 6em 0 3em 0;
+  position: relative;
+}
+
+.ftco-footer .ftco-heading-2 {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.ftco-footer-social li a {
+  height: 40px;
+  width: 40px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.ftco-footer-social li a:hover {
+  transform: scale(1.1);
+  background: white !important;
+  color: #4CAF50;
+}
+
+.ftco-footer-social li a span {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ftco-footer ul.list-unstyled li a {
+  transition: all 0.3s ease;
+}
+
+.ftco-footer ul.list-unstyled li a:hover {
+  padding-left: 8px;
+  opacity: 0.8;
+}
+
+.block-23 ul li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.block-23 ul li .icon {
+  width: 30px;
+  display: inline-block;
+  color: white !important;
+}
+
+.block-23 ul li .text {
+  color: white !important;
+}
+
+.logo-circle {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.logo-circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+@media (max-width: 767.98px) {
+  .ftco-footer-widget {
+    margin-bottom: 30px;
+  }
+}
